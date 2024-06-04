@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_person_form" model="ir.ui.view">
+        <field name="name">person.person.form</field>
+        <field name="model">person.person</field>
+        <field name="arch" type="xml">
+            <form string="Person">
+                <sheet>
+                    <group>
+                        <field name="name" required="1"/>
+                        <field name="telephone" required="1"/>
+                        <field name="address" required="1"/>
+                        <field name="email" required="1"/>
+                        <field name="photo" widget="image"/>
+                        <field name="gender" widget="selection" required="1"/>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_client2_form" model="ir.ui.view">
+        <field name="name">person.person.form</field>
+        <field name="model">person.person</field>
+        <field name="arch" type="xml">
+            <form string="client2">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="telephone" />
+                        <field name="address" />
+                        <field name="email" />
+                        <field name="photo" widget="image"/>
+                        <field name="gender" />
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_person_tree" model="ir.ui.view">
+        <field name="name">person.person.tree</field>
+        <field name="model">person.person</field>
+        <field name="arch" type="xml">
+            <tree string="Person">
+                        <field name="name" required="1"/>
+                        <field name="telephone" required="1"/>
+                        <field name="address" required="1"/>
+                        <field name="email" required="1"/>
+                        <field name="photo" required="1"/>
+                        <field name="gender" required="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_client2_tree" model="ir.ui.view">
+        <field name="name">person.person.tree</field>
+        <field name="model">person.person</field>
+        <field name="arch" type="xml">
+            <tree string="client">
+                        <field name="name" />
+                        <field name="telephone" />
+                        <field name="address" />
+                        <field name="email" />
+                        <field name="photo" />
+                        <field name="gender" />
+            </tree>
+        </field>
+    </record>
+
+
+
+    <record id="action_person_example" model="ir.actions.act_window">
+        <field name="name">Person name</field>
+        <field name="res_model">person.person</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_client_example" model="ir.actions.act_window">
+        <field name="name">client name</field>
+        <field name="res_model">person.person</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_root_person"
+              name="Person_client"/>
+
+    <menuitem id="menu_person_id1"
+              name="Exceptions"
+              parent="menu_root_person"
+              action="action_person_example"/>
+    <menuitem id="menu_person_id2"
+              name="It's important"
+              parent="menu_root_person"
+              action="action_client_example"/>
+
+
+
+</odoo>
