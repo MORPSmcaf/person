@@ -3,7 +3,7 @@
     'version': '16.0.1.0.0',
     'summary': 'Manage information about persons and clients',
     'author': 'Akhthar',
-    'website': 'https://www.Test.com',
+    'website': 'https://www.test.com',
     'license': 'LGPL-3',
     'depends': ['base'],
     'application': True,
