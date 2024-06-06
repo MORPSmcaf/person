@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="view_person_form" model="ir.ui.view">
-        <field name="name">abstract.person.form</field>
-        <field name="model">abstract.person</field>
+        <field name="name">person.person.form</field>
+        <field name="model">person.person</field>
         <field name="arch" type="xml">
             <form string="Person">
                 <sheet>
@@ -21,8 +21,8 @@
     </record>
 
     <record id="view_client2_form" model="ir.ui.view">
-        <field name="name">abstract.person.form</field>
-        <field name="model">abstract.person</field>
+        <field name="name">person.person.form</field>
+        <field name="model">person.person</field>
         <field name="arch" type="xml">
             <form string="client2">
                 <sheet>
@@ -41,8 +41,8 @@
     </record>
 
     <record id="view_person_tree" model="ir.ui.view">
-        <field name="name">abstract.person.tree</field>
-        <field name="model">abstract.person</field>
+        <field name="name">person.person.tree</field>
+        <field name="model">person.person</field>
         <field name="arch" type="xml">
             <tree string="Person">
                         <field name="name" required="1"/>
@@ -56,8 +56,8 @@
     </record>
 
     <record id="view_client2_tree" model="ir.ui.view">
-        <field name="name">abstract.person.tree</field>
-        <field name="model">abstract.person</field>
+        <field name="name">person.person.tree</field>
+        <field name="model">person.person</field>
         <field name="arch" type="xml">
             <tree string="client">
                         <field name="name" />
@@ -74,13 +74,13 @@
 
     <record id="action_person_example" model="ir.actions.act_window">
         <field name="name">Person name</field>
-        <field name="res_model">abstract.person</field>
+        <field name="res_model">person.person</field>
         <field name="view_mode">tree,form</field>
     </record>
 
     <record id="action_client_example" model="ir.actions.act_window">
         <field name="name">client name</field>
-        <field name="res_model">abstract.person</field>
+        <field name="res_model">person.person</field>
         <field name="view_mode">tree,form</field>
     </record>
 
