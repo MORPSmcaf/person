@@ -4,7 +4,7 @@ import re
 
 
 class Person(models.Model):
-    _name = 'abstract.person'
+    _name = 'person.person'
     _description = 'Abstract model of a person'
 
     name = fields.Char(string='Name')
