@@ -1,6 +1,6 @@
 {
     'name': 'Person and Client Management',
-    'version': '1.0',
+    'version': '16.0.1.0.0',
     'summary': 'Manage information about persons and clients',
     'author': 'Akhthar',
     'website': 'https://www.Test.com',
