@@ -1,2 +1,2 @@
-from . import person
+from . import abstract_person
 from . import client
