@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_person_form" model="ir.ui.view">
+        <field name="name">person.person.form</field>
+        <field name="model">custom.client</field>
+        <field name="arch" type="xml">
+            <form string="Person">
+                <sheet>
+                    <group>
+                        <field name="name" required="1"/>
+                        <field name="telephone" required="1"/>
+                        <field name="address" required="1"/>
+                        <field name="email" required="1"/>
+                        <field name="photo" widget="image"/>
+                        <field name="gender" widget="selection" required="1"/>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="view_person_tree" model="ir.ui.view">
+        <field name="name">person.person.tree</field>
+        <field name="model">custom.client</field>
+        <field name="arch" type="xml">
+            <tree string="Person">
+                <field name="name" required="1"/>
+                <field name="telephone" required="1"/>
+                <field name="address" required="1"/>
+                <field name="email" required="1"/>
+                <field name="photo" required="1"/>
+                <field name="gender" required="1"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="action_client_example" model="ir.actions.act_window">
+        <field name="name">client name</field>
+        <field name="res_model">custom.client</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_root_person"
+              name="Person_client"/>
+
+    <menuitem id="menu_person_id1"
+              name="Client Details"
+              parent="menu_root_person"
+              action="action_client_example"/>
+
+
+</odoo>
