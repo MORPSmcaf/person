@@ -10,7 +10,7 @@
     'installable': True,
     'data': [
         'security/ir.model.access.csv',
-        'views/abstract_person.xml',
+        'views/custom_client_view.xml',
 
     ],
     'images': [
