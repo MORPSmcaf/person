@@ -13,4 +13,4 @@ class CustomClient(models.Model):
     def _check_postalcode(self):
         for record in self:
             if record.postalcode and len(record.postalcode) != 6:
-                raise ValidationError("Postal Code must be exactly 6 characters long")
+                raise ValidationError("Postal Code must be exactly 6 characters long.")
