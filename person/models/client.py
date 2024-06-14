@@ -1,5 +1,6 @@
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError
+import re
 
 class CustomClient(models.Model):
     _name = 'custom.client'
@@ -12,5 +13,9 @@ class CustomClient(models.Model):
     @api.constrains('postalcode')
     def _check_postalcode(self):
         for record in self:
-            if record.postalcode and len(record.postalcode) != 6:
-                raise ValidationError("Postal Code must be exactly 6 characters long.")
+            if record.postalcode:
+                if not re.match(r'^[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d$', record.postalcode):
+                    raise ValidationError("Postal Code must be in the format A1A 1A1.")
+
+
+

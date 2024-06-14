@@ -24,13 +24,13 @@
         <field name="model">custom.client</field>
         <field name="arch" type="xml">
             <tree string="Client">
-                <field name="name" required="1"/>
-                <field name="telephone" required="1"/>
-                <field name="address" required="1"/>
-                <field name="email" required="1"/>
-                <field name="photo" required="1"/>
-                <field name="gender" required="1"/>
-                <field name="postalcode"  required="1"/>
+                 <field name="name" required="1"/>
+                 <field name="telephone" required="1"/>
+                 <field name="address" required="1"/>
+                 <field name="email" required="1"/>
+                 <field name="photo" required="1"/>
+                 <field name="gender" required="1"/>
+                 <field name="postalcode"  required="1"/>
             </tree>
         </field>
     </record>
