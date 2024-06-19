@@ -2,7 +2,6 @@ from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 import re
 
-
 class Person(models.AbstractModel):
     _name = 'abstract.person'
     _description = 'Abstract model of a person'
