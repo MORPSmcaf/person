@@ -1,0 +1,156 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* person
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-26 16:44+0000\n"
+"PO-Revision-Date: 2024-06-26 16:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: person
+#: model:ir.model,name:person.model_abstract_person
+msgid "Abstract model of a person"
+msgstr "Modèle abstrait d'une personne"
+
+#. module: person
+#: model:ir.model,name:person.model_abstract_person
+msgid "Abstract model of a person"
+msgstr "Modèle abstrait d'une personne"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_abstract_person__address
+#: model:ir.model.fields,field_description:person.field_custom_client__address
+msgid "Address"
+msgstr "Adresse"
+
+#. module: person
+#: model_terms:ir.ui.view,arch_db:person.custom_client_form_view
+#: model_terms:ir.ui.view,arch_db:person.custom_client_tree_view
+msgid "Client"
+msgstr "Client"
+
+#. module: person
+#: model:ir.ui.menu,name:person.menu_person_id1
+msgid "Client Details"
+msgstr "Détails du client"
+
+#. module: person
+#: model:ir.actions.act_window,name:person.action_client_example
+msgid "Client name"
+msgstr "Nom du client"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_custom_client__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_custom_client__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: person
+#: model:ir.ui.menu,name:person.menu_root_person
+msgid "Custom Client"
+msgstr "Client personnalisé"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_custom_client__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_abstract_person__email
+#: model:ir.model.fields,field_description:person.field_custom_client__email
+msgid "Email"
+msgstr "Email"
+
+#. module: person
+#: model:ir.model.fields.selection,name:person.selection__abstract_person__gender__female
+#: model:ir.model.fields.selection,name:person.selection__custom_client__gender__female
+msgid "Female"
+msgstr "Femme"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_abstract_person__gender
+#: model:ir.model.fields,field_description:person.field_custom_client__gender
+msgid "Gender"
+msgstr "Genre"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_custom_client__id
+msgid "ID"
+msgstr "ID"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_custom_client____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_custom_client__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_custom_client__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: person
+#: model:ir.model.fields.selection,name:person.selection__abstract_person__gender__male
+#: model:ir.model.fields.selection,name:person.selection__custom_client__gender__male
+msgid "Male"
+msgstr "Homme"
+
+#. module: person
+#: model:ir.model,name:person.model_custom_client
+msgid "Model of a client"
+msgstr "Modèle d'un client"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_abstract_person__name
+#: model:ir.model.fields,field_description:person.field_custom_client__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: person
+#: model:ir.model.fields.selection,name:person.selection__abstract_person__gender__other
+#: model:ir.model.fields.selection,name:person.selection__custom_client__gender__other
+msgid "Other"
+msgstr "Autre"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_abstract_person__photo
+msgid "Photo"
+msgstr "Photo"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_abstract_person__photo_filename
+#: model:ir.model.fields,field_description:person.field_custom_client__photo_filename
+msgid "Photo Filename"
+msgstr "Nom de fichier photo"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_abstract_person__telephone
+#: model:ir.model.fields,field_description:person.field_custom_client__telephone
+msgid "Telephone"
+msgstr "Téléphone"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_custom_client__photo
+msgid "photo"
+msgstr "photo"
+
+#. module: person
+#: model:ir.model.fields,field_description:person.field_custom_client__postalcode
+msgid "postalcode"
+msgstr "code postal"
