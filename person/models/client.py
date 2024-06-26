@@ -7,3 +7,5 @@ class CustomClient(models.Model):
     _inherit = 'abstract.person'
 
     photo = fields.Char(string="photo")
+
+    postalcode = fields.Char(string="postalcode")
