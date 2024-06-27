@@ -15,10 +15,6 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-#. module: person
-#: model:ir.model,name:person.model_abstract_person
-msgid "Abstract model of a person"
-msgstr "Modèle abstrait d'une personne"
 
 #. module: person
 #: model:ir.model,name:person.model_abstract_person
